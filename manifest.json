@@ -1,0 +1,25 @@
+{
+    "name": "GoalCompass - Harada Method",
+    "description": "原田式メソッド目標達成アプリ + NotebookLM振り返り連携",
+    "version": "1.0.1",
+    "manifest_version": 3,
+    "permissions": [
+        "storage",
+        "tabs",
+        "scripting",
+        "history",
+        "identity"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "https://script.google.com/*",
+        "https://notebooklm.google.com/*"
+    ],
+    "action": {
+        "default_title": "Open GoalCompass"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "options_page": "index.html"
+}
